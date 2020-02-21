@@ -13,9 +13,9 @@ func TestCalcFuel(t *testing.T) {
 	}
 
 	for _, c := range cases {
-		got := CalcFuel(c.in)
+		got := calcFuel(c.in)
 		if got != c.want {
-			t.Errorf("CalcFuel(%d) == %d, want %d", c.in, got, c.want)
+			t.Errorf("calcFuel(%d) == %d, want %d", c.in, got, c.want)
 		}
 	}
 }
@@ -30,9 +30,9 @@ func TestCalcFuelRec(t *testing.T) {
 	}
 
 	for _, c := range cases {
-		got := CalcFuelRec(c.in)
+		got := calcFuelRec(c.in)
 		if got != c.want {
-			t.Errorf("CalcFuelRec(%d) == %d, want %d", c.in, got, c.want)
+			t.Errorf("calcFuelRec(%d) == %d, want %d", c.in, got, c.want)
 		}
 	}
 }
