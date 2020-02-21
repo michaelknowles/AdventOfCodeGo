@@ -20,3 +20,23 @@ func ReadFile(year int, day int) (lines []string, err error) {
 	}
 	return
 }
+
+// CloneIntSlice copies a slice into another
+func CloneIntSlice(input []int) []int {
+	if input == nil {
+		return nil
+	} 
+	clone := make([]int, len(input))
+	copy(clone, input)
+	return clone
+}
+
+// CloneStrSlice copies a slice into another
+func CloneStrSlice(input []string) []string {
+	if input == nil {
+		return nil
+	} 
+	clone := make([]string, len(input))
+	copy(clone, input)
+	return clone
+}
